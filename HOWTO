@@ -1,0 +1,29 @@
+### How to Upload from Linux Server to GitHub ###
+
+--Initiate git init and git config
+git init
+git config --global user.email "johncarlo.adena@gmail.com"
+git config --global user.name "jcadena01"
+
+--Establish connection to Git Repository (Copy link from GitHub)
+git remote add origin https://github.com/jcadena01/Maven.git
+
+--Check if status has been establised
+git remote -v
+
+--Add items to .git
+git add .
+
+--Check status after adding
+git status
+
+--Commit the added files/items
+git commit -m "Maven Config"
+
+--Check status after committing
+git status
+
+--Push the files committed to Git Repository
+git push -u origin master
+
+### To check if push command is successful, just refresh the web browser ###
